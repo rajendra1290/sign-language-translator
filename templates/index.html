@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ASL Translator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/static/js/script.js"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <div class="flex flex-col items-center py-10">
+        <h1 class="text-5xl font-bold mb-6">🤟 ASL Sign Language Translator</h1>
+
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg flex gap-10">
+
+            <!-- Display processed video -->
+            <div>
+                <img id="videoDisplay"
+                     class="rounded-lg w-[450px] border-4 border-green-500">
+            </div>
+
+            <div class="flex flex-col justify-center">
+
+                <h2 class="text-3xl font-semibold mb-3">Prediction</h2>
+                <div id="prediction"
+                     class="text-7xl font-bold text-green-400 border-4 border-green-500 rounded-lg p-6 w-[150px] h-[150px] flex items-center justify-center">
+                    -
+                </div>
+
+                <h2 class="text-2xl font-semibold mt-6">Sentence</h2>
+                <textarea id="sentenceBox"
+                    class="w-[350px] h-[120px] p-4 text-black rounded-lg text-xl outline-none"></textarea>
+
+                <div class="flex gap-4 mt-4">
+                    <button id="clearBtn"
+                        class="bg-gray-600 px-5 py-2 rounded-xl text-lg">Clear</button>
+                </div>
+
+                <button id="startBtn"
+                    class="mt-8 bg-green-600 px-6 py-3 rounded-xl text-xl font-semibold">
+                    Start Camera
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
